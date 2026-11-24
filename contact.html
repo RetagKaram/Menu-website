@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Contact Us | The Olive Table</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body class="contact-page" id="top">
+        <!-- NAVIGATION -->
+        <header class="header contact-header">
+            <a href="index.html" class="logo">
+                THE OLIVE TABLE
+                <span>RESTAURANT & CAFÉ</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <a href="menu.html" class="header-button"> View Menu ↗ </a>
+        </header>
+
+        <!-- CONTACT HERO -->
+        <section class="contact-hero">
+            <span class="contact-hero-flower flower-one">✳</span>
+            <span class="contact-hero-flower flower-two">✿</span>
+
+            <p class="small-heading">THE OLIVE TABLE · GET IN TOUCH</p>
+
+            <h1>
+                We'd love to<br />
+                <em>hear from you.</em>
+            </h1>
+
+            <p class="contact-hero-description">
+                A question, a lovely idea, or just something you'd like to share? There's always room for a little
+                conversation.
+            </p>
+
+            <a href="#contact-form-section" class="contact-hero-button"> Leave Us a Message ↓ </a>
+
+            <div class="contact-hero-signature">WITH LOVE, THE OLIVE TABLE ♡</div>
+        </section>
+
+        <!-- CONTACT INTRODUCTION -->
+        <section class="contact-intro">
+            <p class="small-heading">LET'S CONNECT</p>
+
+            <h2>A little hello goes a <em>long way.</em></h2>
+
+            <p>
+                Whether you're wondering about our menu, planning a visit, or simply getting in touch, we're happy to
+                hear from you.
+            </p>
+        </section>
+
+        <!-- CONTACT INFORMATION CARDS -->
+        <section class="contact-card-section">
+            <div class="contact-info-grid">
+                <!-- LOCATION -->
+                <article class="contact-info-card">
+                    <span class="contact-card-number">01 / VISIT</span>
+
+                    <div class="contact-card-icon">⌖</div>
+
+                    <h3>Find Our Table</h3>
+
+                    <p>We'd love to welcome you. Our exact location will be shared here soon.</p>
+
+                    <a href="location.html"> Explore Location ↗ </a>
+                </article>
+
+                <!-- EMAIL -->
+                <article class="contact-info-card">
+                    <span class="contact-card-number">02 / MESSAGE</span>
+
+                    <div class="contact-card-icon">✉</div>
+
+                    <h3>Send Some Love</h3>
+
+                    <p>Have a question or something to share? Use our contact form to prepare your message.</p>
+
+                    <a href="#contact-form-section"> Write a Message ↗ </a>
+                </article>
+
+                <!-- OPENING HOURS -->
+                <article class="contact-info-card">
+                    <span class="contact-card-number">03 / VISITING</span>
+
+                    <div class="contact-card-icon">◷</div>
+
+                    <h3>Come Say Hello</h3>
+
+                    <p>Coffee mornings, afternoon catch-ups and lovely evenings. Hours will be announced soon.</p>
+
+                    <a href="location.html"> Visiting Details ↗ </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM SECTION -->
+        <section class="contact-form-section" id="contact-form-section">
+            <!-- LEFT EDITORIAL PANEL -->
+            <div class="contact-form-editorial">
+                <p class="small-heading">A NOTE FROM OUR TABLE</p>
+
+                <h2>
+                    Every message<br />
+                    starts a <em>story.</em>
+                </h2>
+
+                <p>We believe the best experiences begin with connection.</p>
+
+                <p>Tell us what's on your mind, and let's make something lovely happen.</p>
+
+                <div class="contact-editorial-quote">
+                    <span>“</span>
+
+                    <p>It's always the little conversations that make the biggest memories.</p>
+
+                    <span class="contact-quote-signature"> — THE OLIVE TABLE </span>
+                </div>
+
+                <div class="contact-editorial-decoration">✿</div>
+            </div>
+
+            <!-- RIGHT FORM PANEL -->
+            <div class="contact-form-panel">
+                <p class="small-heading">YOUR MESSAGE</p>
+
+                <h2>Write us a <em>little note.</em></h2>
+
+                <p class="contact-form-intro">Fill in the details below. All required fields are marked with *.</p>
+
+                <form id="contactForm">
+                    <!-- NAME -->
+                    <div class="contact-form-row">
+                        <div class="contact-field">
+                            <label for="contactName"> Your Name * </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Your full name"
+                                autocomplete="name"
+                                maxlength="100"
+                                required
+                            />
+                        </div>
+
+                        <!-- EMAIL -->
+                        <div class="contact-field">
+                            <label for="contactEmail"> Email Address * </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                maxlength="254"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="contact-field">
+                        <label for="contactPhone">
+                            Phone Number
+                            <span>(optional)</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="contactPhone"
+                            name="phone"
+                            placeholder="+971 ..."
+                            autocomplete="tel"
+                            maxlength="30"
+                        />
+                    </div>
+
+                    <!-- SUBJECT -->
+                    <div class="contact-field">
+                        <label for="contactSubject"> What's This About? * </label>
+
+                        <select id="contactSubject" name="subject" required>
+                            <option value="" disabled selected>Choose a subject</option>
+
+                            <option value="General Enquiry">General Enquiry</option>
+
+                            <option value="Menu Question">Menu Question</option>
+
+                            <option value="Reservation Enquiry">Reservation Enquiry</option>
+
+                            <option value="Special Occasion">Special Occasion</option>
+
+                            <option value="Feedback">Feedback</option>
+
+                            <option value="Other">Something Else</option>
+                        </select>
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div class="contact-field">
+                        <label for="contactMessage"> Your Message * </label>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell us what's on your mind..."
+                            maxlength="3000"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- SUBMIT -->
+                    <button type="submit" class="contact-submit-button">
+                        Preview My Message
+                        <span>↗</span>
+                    </button>
+
+                    <p class="contact-form-note">
+                        This is a demo form. Your message will be previewed here, not sent to a restaurant.
+                    </p>
+                </form>
+
+                <!-- FORM CONFIRMATION -->
+                <div class="contact-success" id="contactSuccess" role="status" aria-live="polite" hidden>
+                    <div class="contact-success-icon">♡</div>
+
+                    <p class="small-heading">YOUR MESSAGE IS READY</p>
+
+                    <h3>A lovely little <em>note.</em></h3>
+
+                    <p>Here's the message you prepared. Nothing has been sent yet.</p>
+
+                    <div class="contact-message-preview" id="contactMessagePreview"></div>
+
+                    <button type="button" class="contact-copy-button" id="copyContactMessage">
+                        <span>Copy My Message</span>
+                        <span>⧉</span>
+                    </button>
+
+                    <p id="copyMessageStatus" class="contact-copy-status" aria-live="polite"></p>
+
+                    <button type="button" class="contact-new-button" id="newContactMessage">
+                        Write Another Message ↗
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="contact-faq">
+            <div class="contact-faq-heading">
+                <p class="small-heading">A FEW LITTLE QUESTIONS</p>
+
+                <h2>Good to <em>know.</em></h2>
+
+                <p>A few helpful things before you get in touch.</p>
+            </div>
+
+            <div class="contact-faq-list">
+                <details class="contact-faq-item">
+                    <summary>
+                        Can I book a table?
+                        <span>+</span>
+                    </summary>
+
+                    <p>Booking information will be added once restaurant reservations are available.</p>
+                </details>
+
+                <details class="contact-faq-item">
+                    <summary>
+                        Where can I see your menu?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        You can explore our current concept menu on the
+                        <a href="menu.html">Menu page</a>.
+                    </p>
+                </details>
+
+                <details class="contact-faq-item">
+                    <summary>
+                        Where are you located?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Our location details will be added to the
+                        <a href="location.html">Location page</a>
+                        once confirmed.
+                    </p>
+                </details>
+
+                <details class="contact-faq-item">
+                    <summary>
+                        Does the contact form send emails?
+                        <span>+</span>
+                    </summary>
+
+                    <p>
+                        Not yet. This demo lets you prepare, preview, and copy a message. Sending requires a connected
+                        email service or website backend.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="contact-final">
+            <span class="contact-final-flower">✳</span>
+
+            <p class="small-heading">GOOD FOOD · GOOD PEOPLE · GOOD DAYS</p>
+
+            <h2>
+                Until we meet<br />
+                at <em>the table.</em>
+            </h2>
+
+            <p>There's always something lovely waiting to be discovered.</p>
+
+            <a href="menu.html" class="contact-final-button"> Explore Our Menu ↗ </a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        THE OLIVE TABLE
+                        <span>RESTAURANT & CAFÉ</span>
+                    </a>
+
+                    <p>Good food. Beautiful moments. A place to feel at home.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Explore</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Visit Us</h3>
+
+                    <p>Location coming soon</p>
+                    <p>Opening hours coming soon</p>
+
+                    <a href="location.html">Find Us ↗</a>
+                </div>
+
+                <div class="footer-news">
+                    <h3>A Little Note From Us</h3>
+
+                    <p>Something lovely is always around the corner.</p>
+
+                    <div class="newsletter-box">
+                        <span>Newsletter coming soon</span>
+                        <span class="newsletter-arrow">↗</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="contact.html" aria-label="Contact">✉</a>
+
+                        <a href="gallery.html" aria-label="Gallery">✿</a>
+
+                        <a href="location.html" aria-label="Location">⌖</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 The Olive Table. Concept Website.</p>
+
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#top">Back to Top ↑</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

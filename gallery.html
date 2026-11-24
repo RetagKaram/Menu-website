@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Gallery | The Olive Table</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="gallery-page" id="top">
+        <!-- HEADER -->
+        <header class="header gallery-header">
+            <a href="index.html" class="logo">
+                THE OLIVE TABLE
+                <span>RESTAURANT & CAFÉ</span>
+            </a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a href="menu.html" class="header-button"> View Menu ↗ </a>
+        </header>
+
+        <!-- GALLERY HERO -->
+        <section class="gallery-hero">
+            <p class="small-heading">THE OLIVE TABLE · OUR LITTLE WORLD</p>
+
+            <h1>
+                A collection of<br />
+                <em>beautiful moments.</em>
+            </h1>
+
+            <p class="gallery-hero-description">
+                From the dishes we love to the spaces that bring us together, discover the little details that make
+                every visit special.
+            </p>
+
+            <a href="#gallery-collection" class="gallery-scroll-link">
+                Explore the Gallery
+                <span>↓</span>
+            </a>
+
+            <div class="gallery-hero-decoration">✳</div>
+        </section>
+
+        <!-- GALLERY INTRODUCTION -->
+        <section class="gallery-main" id="gallery-collection">
+            <div class="gallery-section-heading">
+                <div>
+                    <p class="small-heading">A CLOSER LOOK</p>
+
+                    <h2>Through our <em>lens.</em></h2>
+                </div>
+
+                <p>Good food, thoughtful spaces, and the little things worth remembering.</p>
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <div class="gallery-filters" id="galleryFilters">
+                <button class="gallery-filter active" data-filter="all" aria-pressed="true">All Moments</button>
+
+                <button class="gallery-filter" data-filter="food" aria-pressed="false">Food</button>
+
+                <button class="gallery-filter" data-filter="drinks" aria-pressed="false">Drinks</button>
+
+                <button class="gallery-filter" data-filter="desserts" aria-pressed="false">Desserts</button>
+
+                <button class="gallery-filter" data-filter="interior" aria-pressed="false">Our Space</button>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <!-- JavaScript creates the gallery cards here -->
+            <div class="gallery-grid" id="galleryGrid"></div>
+
+            <p class="gallery-note">
+                Gallery photographs will be added soon. The current cards are design placeholders.
+            </p>
+        </section>
+
+        <!-- QUOTE SECTION -->
+        <section class="gallery-quote">
+            <span class="gallery-quote-flower">✿</span>
+
+            <p class="small-heading">GOOD FOOD · BEAUTIFUL MOMENTS</p>
+
+            <h2>
+                The best moments<br />
+                are the ones we <em>share.</em>
+            </h2>
+
+            <p>Every table has a story. Every visit is a new memory.</p>
+        </section>
+
+        <!-- INVITATION SECTION -->
+        <section class="gallery-invitation">
+            <div class="gallery-invitation-text">
+                <p class="small-heading">THERE'S MORE TO DISCOVER</p>
+
+                <h2>
+                    Something lovely<br />
+                    is <em>waiting.</em>
+                </h2>
+
+                <p>Explore our collection of delicious favourites and find your next favourite little treat.</p>
+
+                <a href="menu.html" class="gallery-menu-button"> Explore Our Menu ↗ </a>
+            </div>
+
+            <div class="gallery-invitation-art">
+                <span class="gallery-art-flower">✳</span>
+                <span class="gallery-art-heart">♡</span>
+                <p>Made with love.</p>
+                <strong>The Olive Table</strong>
+                <span class="gallery-art-small"> FOOD · COMFORT · CONNECTION </span>
+            </div>
+        </section>
+
+        <!-- POP-UP MODAL -->
+        <div
+            class="gallery-modal"
+            id="galleryModal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitle"
+            hidden
+        >
+            <div class="gallery-modal-backdrop" id="modalBackdrop"></div>
+
+            <div class="gallery-modal-content">
+                <button class="gallery-modal-close" id="closeGalleryModal" aria-label="Close gallery">×</button>
+
+                <div class="gallery-modal-art" id="modalArt">
+                    <span>✿</span>
+                    <p>PHOTO COMING SOON</p>
+                </div>
+
+                <div class="gallery-modal-info">
+                    <p class="small-heading" id="modalCategory">OUR GALLERY</p>
+
+                    <h2 id="modalTitle">A Beautiful Moment</h2>
+
+                    <p id="modalDescription">A little moment worth remembering.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        THE OLIVE TABLE
+                        <span>RESTAURANT & CAFÉ</span>
+                    </a>
+
+                    <p>Good food. Beautiful moments. A place to feel at home.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Explore</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Visit Us</h3>
+
+                    <p>Location coming soon</p>
+                    <p>Opening hours coming soon</p>
+
+                    <a href="location.html">Find Us ↗</a>
+                </div>
+
+                <div class="footer-news">
+                    <h3>A Little Note From Us</h3>
+
+                    <p>Something lovely is always around the corner.</p>
+
+                    <div class="newsletter-box">
+                        <span>Newsletter coming soon</span>
+                        <span class="newsletter-arrow">↗</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="contact.html" aria-label="Contact">✉</a>
+                        <a href="gallery.html" aria-label="Gallery">✿</a>
+                        <a href="location.html" aria-label="Location">⌖</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 The Olive Table. Concept Website.</p>
+
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#top">Back to Top ↑</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Existing shared JavaScript -->
+        <script src="script.js"></script>
+
+        <!-- Gallery JavaScript -->
+        <script src="intro.js"></script>
+    </body>
+</html>

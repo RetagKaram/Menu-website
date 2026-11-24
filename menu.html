@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Our Menu | The Olive Table</title>
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body class="menu-page">
+        <!-- HEADER AND MENU HERO -->
+        <div class="menu-banner" id="top">
+            <header class="header">
+                <a href="index.html" class="logo">
+                    THE OLIVE TABLE
+                    <span>RESTAURANT & CAFÉ</span>
+                </a>
+
+                <nav class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html" class="active">Menu</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="location.html">Location</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+                <a href="#menu-items" class="header-button"> View Menu ↗ </a>
+            </header>
+
+            <div class="menu-banner-content">
+                <p class="small-heading">THE OLIVE TABLE · FOOD & DRINKS</p>
+
+                <h1>
+                    Made to be<br />
+                    <em>savoured.</em>
+                </h1>
+
+                <p>From comforting classics to sweet little treats, there's something delicious for every moment.</p>
+
+                <a href="#menu-items" class="main-button"> Explore Our Menu ↓ </a>
+            </div>
+        </div>
+
+        <!-- MENU INTRODUCTION -->
+        <section class="full-menu" id="menu-items">
+            <div class="full-menu-heading">
+                <p class="small-heading">HANDPICKED FOR EVERY CRAVING</p>
+
+                <h2>Find your next <em>favourite.</em></h2>
+
+                <p>Browse our menu, explore different categories, and discover something you'll love.</p>
+            </div>
+
+            <!-- SEARCH BAR -->
+            <div class="menu-search">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search for pizza, burgers, pasta..."
+                    aria-label="Search menu items"
+                />
+            </div>
+
+            <!-- CATEGORY BUTTONS -->
+            <div class="menu-filters" id="menuFilters">
+                <button class="filter-btn active" data-category="all">All Items</button>
+
+                <button class="filter-btn" data-category="pizza">Pizza</button>
+
+                <button class="filter-btn" data-category="burgers">Burgers</button>
+
+                <button class="filter-btn" data-category="pasta">Pasta</button>
+
+                <button class="filter-btn" data-category="starters">Starters</button>
+
+                <button class="filter-btn" data-category="salads">Salads</button>
+
+                <button class="filter-btn" data-category="sides">Sides</button>
+
+                <button class="filter-btn" data-category="sauces">Sauces</button>
+
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+
+                <button class="filter-btn" data-category="cold-drinks">Cold Drinks</button>
+
+                <button class="filter-btn" data-category="ice-cream">Ice Cream</button>
+
+                <button class="filter-btn" data-category="hot-drinks">Hot Drinks</button>
+
+                <button class="filter-btn" data-category="mains">Main Dishes</button>
+            </div>
+
+            <!-- RESULTS HEADING -->
+            <div class="menu-results-heading">
+                <div>
+                    <p class="small-heading">EXPLORE THE FLAVOURS</p>
+
+                    <h2 id="categoryTitle">All Our <em>Favourites.</em></h2>
+                </div>
+
+                <p id="resultCount" aria-live="polite">Showing 120 items</p>
+            </div>
+
+            <!-- JAVASCRIPT ADDS ALL 120 CARDS HERE -->
+            <div class="complete-menu-grid" id="menuGrid"></div>
+
+            <!-- NO RESULTS MESSAGE -->
+            <div class="no-results" id="noResults" hidden>
+                <span>♡</span>
+
+                <h3>Nothing found just yet.</h3>
+
+                <p>Try searching for something else or explore another category.</p>
+
+                <button id="resetMenu" class="reset-button">View All Items ↗</button>
+            </div>
+
+            <p class="menu-disclaimer">Concept menu — items, descriptions and prices are placeholders.</p>
+        </section>
+
+        <!-- DESSERT FEATURE -->
+        <section class="menu-feature">
+            <div class="menu-feature-photo">
+                <img
+                    src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=1100&q=85"
+                    alt="Beautiful cheesecake dessert"
+                    loading="lazy"
+                />
+            </div>
+
+            <div class="menu-feature-content">
+                <p class="small-heading">A LITTLE SOMETHING SWEET</p>
+
+                <h2>
+                    Save room<br />
+                    for <em>dessert.</em>
+                </h2>
+
+                <p>Because the sweetest moments are always worth saving room for.</p>
+
+                <a href="#menu-items" class="menu-feature-button" id="dessertShortcut"> Explore Desserts ↗ </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        THE OLIVE TABLE
+                        <span>RESTAURANT & CAFÉ</span>
+                    </a>
+
+                    <p>Good food. Beautiful moments. A place to feel at home.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Explore</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Visit Us</h3>
+
+                    <p>Location coming soon</p>
+                    <p>Opening hours coming soon</p>
+
+                    <a href="location.html">Find Us ↗</a>
+                </div>
+
+                <div class="footer-news">
+                    <h3>A Little Note From Us</h3>
+
+                    <p>Something lovely is always around the corner.</p>
+
+                    <div class="newsletter-box">
+                        <span>Newsletter coming soon</span>
+                        <span class="newsletter-arrow">↗</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="contact.html" aria-label="Contact">✉</a>
+                        <a href="gallery.html" aria-label="Gallery">✿</a>
+                        <a href="location.html" aria-label="Location">⌖</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 The Olive Table. Concept Website.</p>
+
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="#top">Back to Top ↑</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- MENU JAVASCRIPT -->
+        <script src="intro.js"></script>
+    </body>
+</html>

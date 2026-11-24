@@ -96,7 +96,7 @@ h2 {
 .navbar {
     display: flex;
     align-items: center;
-    gap: 23px;
+    gap: 25px;
 }
 
 .navbar a {
@@ -105,6 +105,7 @@ h2 {
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
+    font-size: 20px;
 }
 
 .navbar a:hover,
@@ -3915,4 +3916,11 @@ a:focus-visible {
     .contact-final h2 {
         font-size: 48px;
     }
+}
+.my_name {
+    text-shadow: 2px 2px 5px #fff7e9;
+    font-size: 2vw !important;
+}
+.link {
+    font-size: large !important;
 }
